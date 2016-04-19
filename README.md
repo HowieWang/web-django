@@ -10,6 +10,7 @@ a blog follow this :
 ### errors
 
 1.在pythonanywhere上部署，文章是空的？！
+没有添加publish日期，views是过滤取值，按时间排列取不到。当然是空了！
 
 2.
 $ git commit -m "Changed the HTML for the site."
