@@ -1,8 +1,8 @@
 {% extends 'myblog/base.html' %}
 
 {% block content %}
-{{posts}}
-                        {% for post in posts %}
+{% if posts %}
+                    {% for post in posts %}
                             <div class="post">
                                 <div class="date">
                                         <p> published: {{ post.published_date }}</p>
@@ -11,5 +11,8 @@
                                 <p>{{ post.text | linebreaks }}</p>
                             </div>
                     {% endfor %}
+{% else %}
+    <h1>no any posts!</h1>
+{%  endif %}
 
 {% endblock content %}
